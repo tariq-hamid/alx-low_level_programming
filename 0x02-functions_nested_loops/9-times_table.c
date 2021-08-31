@@ -27,10 +27,10 @@ int times_table(void)
 			else
 			{
 				additional(i, j, ij);
-			}
-		}
+			};
+		};
 		printf("\n");
-	}
+	};
 }
 
 /**
@@ -71,10 +71,8 @@ void additional(int i, int j, int ij)
 					printf(" %d", ij);
 				else
 					printf(" %d,", ij);
-			}
-		}
-	}
+			};
+		};
+	};
 }
-		}
-	}
-}
+
