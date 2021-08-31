@@ -15,11 +15,11 @@ void jack_bauer(void)
 		for (j = 0; j <= 59; j++)
 		{
 			if (i < 10)
-				printf('0');
-			printf(i + ':');
+				printf("0");
+			printf("%d:", i);
 			if (j < 10)
-				printf('0');
-			printf(j + '\n');
+				printf("0");
+			printf("%d\n", j);
 		}
 	}
 }
