@@ -75,3 +75,6 @@ void additional(int i, int j, int ij)
 		}
 	}
 }
+		}
+	}
+}
