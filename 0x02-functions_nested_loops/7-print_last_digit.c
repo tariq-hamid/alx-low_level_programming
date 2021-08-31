@@ -1,3 +1,6 @@
+#include "holberton"
+#include <stdlib.h>
+
 /**
  * print_last_digit - returns the last digit of n
  * @n: passed to print_last_digit
@@ -6,5 +9,7 @@
  */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	_putchar(abs(n % 10));
+	return (abs(n % 10));
 }
+
