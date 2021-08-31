@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long sum, x, y;
+	unsigned long sum, x, y;
 	int i;
 
 	i = 0;
@@ -18,11 +18,11 @@ int main(void)
 	{
 		sum = y + x;
 		if (i == 0)
-			printf("%ld, %ld, ", x, y);
+			printf("%lu, %lu, ", x, y);
 		else if (i == 97)
-			printf("%ld\n", y);
+			printf("%lu\n", y);
 		else
-			printf("%ld, ", y);
+			printf("%lu, ", y);
 		x = y;
 		y = sum;
 		i++;
