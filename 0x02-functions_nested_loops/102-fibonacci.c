@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long long int sum, x, y;
+	long sum, x, y;
 	int i;
 
 	i = 0;
@@ -18,11 +18,11 @@ int main(void)
 	{
 		sum = y + x;
 		if (i == 0)
-			printf("%lli, %lli, ", x, y);
+			printf("%ld, %ld, ", x, y);
 		else if (i == 49)
-			printf("%lli\n", y);
+			printf("%ld\n", y);
 		else
-			printf("%lli, ", y);
+			printf("%ld, ", y);
 		x = y;
 		y = sum;
 		i++;
