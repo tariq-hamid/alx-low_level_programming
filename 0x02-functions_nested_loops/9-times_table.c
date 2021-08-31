@@ -6,7 +6,7 @@ int i, j, ij;
  *
  * Return: nth, void
  */
-int times_table(void)
+void times_table(void)
 {
 	for (i = 0; i < 10; i++)
 	{
