@@ -15,7 +15,7 @@ int main(void)
 	while (i <= 97)
 	{
 		fib = x + y;
-		if (counter < 97)
+		if (i < 97)
 		{
 			printf("%lu, ", fib);
 		}
