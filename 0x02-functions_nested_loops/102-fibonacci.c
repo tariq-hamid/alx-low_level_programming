@@ -14,12 +14,12 @@ int main(void)
 	sum = 0;
 	x = 1;
 	y = 2;
-	while (i < 50)
+	while (i < 49)
 	{
 		sum = y + x;
 		if (i == 0)
 			printf("%ld, %ld, ", x, y);
-		else if (i == 49)
+		else if (i == 48)
 			printf("%ld\n", y);
 		else
 			printf("%ld, ", y);
