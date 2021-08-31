@@ -18,11 +18,11 @@ int main(void)
 	{
 		sum = y + x;
 		if (i == 0)
-			printf("%ld, %ld, ", x, y);
+			printf("%lli, %lli, ", x, y);
 		else if (i == 49)
-			printf("%ld\n", y);
+			printf("%lli\n", y);
 		else
-			printf("%ld, ", y);
+			printf("%lli, ", y);
 		x = y;
 		y = sum;
 		i++;
