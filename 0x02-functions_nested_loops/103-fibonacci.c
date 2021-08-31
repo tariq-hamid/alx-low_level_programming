@@ -7,23 +7,22 @@
  */
 int main(void)
 {
-	long sum, x, y, sum_;
+	long sum = 2;
+	long x = 1;
+	long y = 2;
+	long fib = 0;
 
-	sum = 0;
-	sum_ = 0;
-	x = 1;
-	y = 2;
-	while (y < 4000000)
+	while (fib <= 4000000)
 	{
-		if (x % 2 == 0)
-			sum_ = sum_ + x;
-		if (y % 2 == 0)
-			sum_ = sum_ + y;
-		sum = y + x;
+		fib = x + y;
+		if (fib % 2 == 0)
+		{
+			sum += fib;
+		}
 		x = y;
-		y = sum;
+		y = fib;
 	}
-	printf("%ld\n", sum_);
+	printf("%ld\n", sum);
 	return (0);
 }
 
