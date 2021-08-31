@@ -1,51 +1,77 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * times_table - prints the 9 times table
+ * times_table - prints the 9 times table, starting with 0.
  *
  * Return: nth, void
  */
-void times_table(void)
+int times_table(void)
 {
-	int i, j, ij, k;
+	int i, j, ij;
 
-	for (j = 0; j <= 9; j++)
+	for (i = 0; i < 10; i++)
 	{
-		for (i = 0; i <= 9; i++)
+		printf("0, ");
+		for (j = 1; j < 10; j++)
 		{
-			ij = j * i;
-			if (i != 0)
+			ij = i * j;
+			if (i == 0)
 			{
-				_putchar(',');
-				for (k = len(ij); k <= len(9 * 9); k++)
-					_putchar(' ');
+				if (j == 9)
+					printf("  0");
+				else if (j >= 2)
+					printf("  0,");
+				else
+					printf(" 0,");
 			}
-			if (ij > 9)
+			else
 			{
-				_putchar(ij / 10 + '0');
+				additional(i, j, ij);
 			}
-			_putchar(ij % 10 + '0');
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
 
 /**
- * len - counts the number of digits in a number
- * @n: number to be used
+ * additional - remaining code
+ * @i: passed to additional
+ * @j: passed to additional
+ * @ij: passed to additional
  *
- * Return: returns the number of digits
+ * Return: nth, void
  */
-int len(int n)
+void additional(int i, int j, int ij)
 {
-	int digits = 0;
-
-	if (n == 0)
-		return (1);
-	while (n != 0)
+	if (i == 1)
 	{
-		n /= 10;
-		digits++;
+		if (j == 9)
+			printf("  %d", j);
+		else if (j >= 2)
+			printf("  %d,", j);
+		else
+			printf(" %d,", j);
 	}
-	return (digits);
+	else
+	{
+		if (j == 1)
+			printf(" %d,", i);
+		else
+		{
+			if (ij < 10)
+			{
+				if (j == 9)
+					printf("  %d", ij);
+				else
+					printf("  %d,", ij);
+			}
+			else
+			{
+				if (j == 9)
+					printf(" %d", ij);
+				else
+					printf(" %d,", ij);
+			}
+		}
+	}
 }
