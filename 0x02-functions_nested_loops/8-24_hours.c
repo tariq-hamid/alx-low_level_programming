@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer,
@@ -15,13 +15,11 @@ void jack_bauer(void)
 		for (j = 0; j <= 59; j++)
 		{
 			if (i < 10)
-				_putchar('0');
-			_putchar(i + '0');
-			_putchar(':');
+				printf('0');
+			printf(i + ':');
 			if (j < 10)
-				_putchar('0');
-			_putchar(j + '0');
-			_putchar(10);
+				printf('0');
+			printf(j + '\n');
 		}
 	}
 }
