@@ -1,4 +1,5 @@
 #include <stdio.h>
+int i, j, ij;
 
 /**
  * times_table - prints the 9 times table, starting with 0.
@@ -7,8 +8,6 @@
  */
 int times_table(void)
 {
-	int i, j, ij;
-
 	for (i = 0; i < 10; i++)
 	{
 		printf("0, ");
@@ -26,7 +25,7 @@ int times_table(void)
 			}
 			else
 			{
-				additional(i, j, ij);
+				additional();
 			};
 		};
 		printf("\n");
@@ -41,7 +40,7 @@ int times_table(void)
  *
  * Return: nth, void
  */
-void additional(int i, int j, int ij)
+void additional(void)
 {
 	if (i == 1)
 	{
