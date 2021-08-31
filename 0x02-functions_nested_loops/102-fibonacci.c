@@ -22,5 +22,6 @@ int main(void)
 		x = sum;
 		i++;
 	}
+	return (0);
 }
 
