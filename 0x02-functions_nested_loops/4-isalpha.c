@@ -8,7 +8,7 @@
  */
 int _isalpha(int c)
 {
-	if (isalpha != 0)
+	if (isalpha(c) != 0)
 		return (1);
 	return (0);
 }
