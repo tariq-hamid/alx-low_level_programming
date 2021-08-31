@@ -17,16 +17,11 @@ int main(void)
 	while (y < 4000000)
 	{
 		sum = y + x;
-		if (i == 0)
-			printf("%ld, %ld, ", x, y);
-		else if (i == 48)
-			printf("%ld\n", y);
-		else
-			printf("%ld, ", y);
 		x = y;
 		y = sum;
 		i++;
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
 
