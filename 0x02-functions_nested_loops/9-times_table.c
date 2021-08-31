@@ -30,7 +30,7 @@ int times_table(void)
 		};
 		printf("\n");
 	};
-}
+};
 
 /**
  * additional - remaining code
