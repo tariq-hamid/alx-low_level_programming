@@ -7,19 +7,23 @@
  */
 int main(void)
 {
-	int i, sum, x;
+	int i, sum, x, y;
 
 	i = 0;
 	sum = 0;
 	x = 0;
+	y = 1;
 	while (i < 50)
 	{
-		sum = sum + x;
-		if (i == 49)
-			printf("%d", x);
+		sum = y + x;
+		if (i == 0)
+			printf("%d, %d, ", x, y);
+		else if (i == 49)
+			printf("%d", y);
 		else
-			printf("%d, ", x);
-		x = sum;
+			printf("%d, ", y);
+		x = y;
+		y = sum;
 		i++;
 	}
 	return (0);
