@@ -7,27 +7,26 @@
  */
 int main(void)
 {
-	int i = 0;
-	unsigned long x = 0;
-	unsigned long y = 1;
-	unsigned long fib;
+	unsigned long int sum, x, y;
+	int i;
 
-	while (i <= 97)
+	i = 0;
+	sum = 0;
+	x = 1;
+	y = 2;
+	while (i < 97)
 	{
-		fib = x + y;
-		if (i < 97)
-		{
-			printf("%lu, ", fib);
-		}
+		sum = y + x;
+		if (i == 0)
+			printf("%lu, %lu, ", x, y);
+		else if (i == 96)
+			printf("%lu\n", y);
 		else
-		{
-			printf("%lu", fib);
-		}
+			printf("%lu, ", y);
 		x = y;
-		y = fib;
+		y = sum;
 		i++;
 	}
-	printf("\n");
 	return (0);
 }
 
