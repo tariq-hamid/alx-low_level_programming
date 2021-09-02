@@ -1,4 +1,4 @@
-#include <ctype>
+#include <ctype.h>
 
 /**
  * _isdigit - checks if c is a digit (0 - 9)
