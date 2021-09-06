@@ -3,38 +3,25 @@
 #include <string.h>
 
 /**
- * rev_string - reverses a string
+ * print_rev - reverses a string
  * @s: string to be reversed
  *
  * Return: nth, void
  */
 void print_rev(char *s)
 {
-	int i = 0, len;
-
-	len = strlen(s) - 1;
-
-	while (len > i)
-	{
-		swap_char(s + len, s + i);
-		i++;
-		len--;
-	}
-	puts(s);
-}
-
-/**
- * swap_char - swaps the values of two char
- * @a: value to be swapped
- * @b: value to be swapped
- *
- * Return: nth, void
- **/
-void swap_char(char *a, char *b)
-{
+	int i, len, right, left;
 	char tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	len = strlen(s);
+	right = len - 1;
+
+	for (i = 0; i < right; i++)
+	{
+		tmp = s[i];
+		s[i] = s[right];
+		s[right] = tmp;
+		right--;
+	}
+	printf("%s\n", s);
 }
