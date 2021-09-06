@@ -10,8 +10,30 @@
  */
 void rev_string(char *s)
 {
-	int i;
+	int i = 0, len;
 
-	for (i = strlen(s) - 1; i >= 0; i--)
-		printf("%s" % s[i]);
+	len = strlen(s) - 1;
+
+	while (length > i)
+	{
+		swap_char(s + length, s + i);
+		i++;
+		length--;
+	}
+}
+
+/**
+ * swap_char - swaps the values of two char
+ * @a: value to be swapped
+ * @b: value to be swapped
+ *
+ * Return: void
+ **/
+void swap_char(char *a, char *b)
+{
+	char tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
