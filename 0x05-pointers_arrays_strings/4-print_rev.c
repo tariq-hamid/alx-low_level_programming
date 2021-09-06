@@ -8,7 +8,7 @@
  *
  * Return: nth, void
  */
-void rev_string(char *s)
+void print_rev(char *s)
 {
 	int i = 0, len;
 
