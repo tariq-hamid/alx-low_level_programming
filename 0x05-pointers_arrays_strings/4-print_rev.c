@@ -6,7 +6,7 @@
  * rev_string - reverses a string
  * @s: string to be reversed
  *
- * Return: void
+ * Return: nth, void
  */
 void rev_string(char *s)
 {
@@ -14,11 +14,11 @@ void rev_string(char *s)
 
 	len = strlen(s) - 1;
 
-	while (length > i)
+	while (len > i)
 	{
-		swap_char(s + length, s + i);
+		swap_char(s + len, s + i);
 		i++;
-		length--;
+		len--;
 	}
 }
 
@@ -27,7 +27,7 @@ void rev_string(char *s)
  * @a: value to be swapped
  * @b: value to be swapped
  *
- * Return: void
+ * Return: nth, void
  **/
 void swap_char(char *a, char *b)
 {
