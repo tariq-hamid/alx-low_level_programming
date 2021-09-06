@@ -23,5 +23,5 @@ void print_rev(char *s)
 		s[right] = tmp;
 		right--;
 	}
-	printf("%s\n", s);
+	puts("%s", s);
 }
