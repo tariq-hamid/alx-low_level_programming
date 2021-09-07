@@ -17,7 +17,7 @@ void rev_string(char *s)
 	{
 		swap_char(s + len, s + i);
 		i++;
-		length--;
+		len--;
 	}
 }
 
