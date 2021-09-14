@@ -10,6 +10,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	len = strspn(s, c);
-	return (len);
+	cp = strchr(s, c);
+	return (cp);
 }
