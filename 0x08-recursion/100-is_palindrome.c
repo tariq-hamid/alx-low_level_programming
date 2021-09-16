@@ -2,7 +2,7 @@
 
 /**
  * is_palindrome - return 1 if s is a palindrome
- * @s: string to be checked, passed to is_palindrome 
+ * @s: string to be checked, passed to is_palindrome
  *
  * Return: 1 if s is a palindrome, 0 otherwise
  */
