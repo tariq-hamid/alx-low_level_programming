@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - returns the square root of a number
- * @n: number, passed to _sqrt_recursion 
+ * @n: number, passed to _sqrt_recursion
  *
  * Return: the square root of n
  */
