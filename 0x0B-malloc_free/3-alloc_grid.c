@@ -3,7 +3,7 @@
 
 /**
  * alloc_grid -  returns a pointer to a 2D array of ints
- * @width: width of the array, passed to alloc_grid 
+ * @width: width of the array, passed to alloc_grid
  * @height: height of the array, passed to alloc_grid
  *
  * Return: pointer to the array
