@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * _strdup - allocates space in memory; containing a copy of str
