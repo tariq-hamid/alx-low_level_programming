@@ -1,6 +1,9 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stddef.h>
+#include <stdio.h>
+
 /**
  * struct list_ - linked list type
  * @str: string - string to be stored in the node
@@ -11,7 +14,7 @@ typedef struct list_
 {
 	char *str;
 	unsigned int len;
-	struct list_s *next;
+	struct list_ *next;
 } list_t;
 
 size_t print_list(const list_t *h);
